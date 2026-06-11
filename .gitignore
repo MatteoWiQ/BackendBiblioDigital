@@ -1,0 +1,81 @@
+# ==============================================================================
+# 1. ENTORNOS VIRTUALES Y DEPENDENCIAS (¡Lo más importante!)
+# ==============================================================================
+# Nunca subas las carpetas donde se instalan las librerías de Python.
+.venv/
+venv/
+ENV/
+env/
+/bin/
+/lib/
+/include/
+/share/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==============================================================================
+# 2. CACHÉ DE PYTHON Y COMPILADOS
+# ==============================================================================
+# Archivos temporales que genera Python al ejecutar tu código.
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==============================================================================
+# 3. VARIABLES DE ENTORNO Y SECRETOS (¡Mucha seguridad aquí!)
+# ==============================================================================
+# En FastAPI es común usar archivos .env para contraseñas, tokens y llaves de BD.
+# ¡NUNCA subas estos archivos a GitHub!
+.env
+.env.*
+!.env.example  # Permitimos subir un archivo de ejemplo sin las contraseñas reales
+
+# ==============================================================================
+# 4. CONFIGURACIONES DE EDITORES E IDEs
+# ==============================================================================
+# Configuraciones locales de tu editor de código (VS Code, PyCharm, etc.)
+.vscode/
+# Excepto si quieres compartir los snippets o las tareas recomendadas:
+# !.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ==============================================================================
+# 5. TESTING, COBERTURA Y LOGS
+# ==============================================================================
+# Archivos generados al ejecutar pruebas con pytest y reportes de cobertura.
+.pytest_cache/
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+*.coverage.*
+.htmlcov_readme
+*.log
+
+# ==============================================================================
+# 6. HERRAMIENTAS DE CALIDAD DE CÓDIGO (Linters/Formatters)
+# ==============================================================================
+# Caché de herramientas que revisan tu código (Ruff, Black, MyPy).
+.ruff_cache/
+.mypy_cache/
+.black
+.dmypy.json
+dmypy.json
+
+# ==============================================================================
+# 7. ARCHIVOS DEL SISTEMA OPERATIVO
+# ==============================================================================
+# Archivos basura que crean Windows y macOS automáticamente.
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

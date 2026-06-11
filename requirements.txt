@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+pymysql
+passlib[bcrypt]
+pyjwt
+python-dotenv
+email-validator
+python-dotenv
